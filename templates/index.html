@@ -7,32 +7,18 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="columns is-1 is-vcentered">
-            <div class="column is-half margin-half-small">
-                <h3 class="title">Age for humans</h3>
-                <textarea id="textareaL" class="textarea" placeholder="GA28w+3d"></textarea>
-            </div>
-            <div class="column is-small">
-                <p class="buttons">
-                    <a class="button is-small" id="convertLR">
-                        <span class="icon is-small">
-                            &#x25b6;
-                        </span>
-                    </a>
-                </p>
-                <p class="buttons">
-                    <a class="button is-small" id="convertRL">
-                        <span class="icon is-small">
-                            &#x25c0;
-                        </span>
-                    </a>
-                </p>
-            </div>
-            <div class="column is-half">
-                <h3 class="title">Age in days</h3>
-                <textarea id="textareaR" class="textarea" placeholder="-67"></textarea>
-            </div>
+    <div class="container mt-3">
+        <div class="p-45">
+            <h3 class="title row">Age for humans</h3>
+            <textarea id="textareaL" class="row textarea form-control" placeholder="GA28w+3d"></textarea>
+        </div>
+        <div class="p-10">
+            <button class="btn" id="convertLR">&#x25b6;</button>
+            <button class="btn" id="convertRL">&#x25c0;</button>
+        </div>
+        <div class="p-45">
+            <h3 class="title row">Age in days</h3>
+            <textarea id="textareaR" class="row textarea form-control" placeholder="-67"></textarea>
         </div>
     </div>
 

@@ -1,10 +1,12 @@
-import "bulma/css/bulma.min.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
 import "./index.css";
 
 const textareaLEl = document.getElementById("textareaL") as HTMLTextAreaElement;
 const textareaREl = document.getElementById("textareaR") as HTMLTextAreaElement;
 const convertLREl = document.getElementById("convertLR") as HTMLAnchorElement;
 const convertRLEl = document.getElementById("convertRL") as HTMLAnchorElement;
+
+setScreensize();
 
 convertLREl.onclick = () => {
     textareaREl.value = textareaLEl.value.split("\n").map((el) => {
@@ -94,3 +96,10 @@ convertRLEl.onclick = () => {
         return ageStr;
     }).join("\n");
 };
+
+function setScreensize() {
+    if (window.screen.width < 800) {
+        convertLREl.innerHTML = "&#x25bc;";
+        convertRLEl.innerHTML = "&#x25b2;";
+    }
+}
