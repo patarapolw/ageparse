@@ -1,0 +1,23 @@
+.is-small {
+    width: 50px;
+}
+
+.margin-half-small {
+    margin-left: -25px;
+}
+
+.container {
+    margin-top: 1em;
+}
+
+html,
+body,
+.container,
+.columns {
+    height: 100%;
+}
+
+.textarea {
+    height: 500px;
+    resize: none;
+}
