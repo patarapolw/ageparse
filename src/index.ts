@@ -3,12 +3,22 @@ import "./index.css";
 
 const textareaLEl = document.getElementById("textareaL") as HTMLTextAreaElement;
 const textareaREl = document.getElementById("textareaR") as HTMLTextAreaElement;
-const convertLREl = document.getElementById("convertLR") as HTMLAnchorElement;
-const convertRLEl = document.getElementById("convertRL") as HTMLAnchorElement;
+const convertLREl = document.getElementById("convertLR") as HTMLButtonElement;
+const convertRLEl = document.getElementById("convertRL") as HTMLButtonElement;
 
 setScreensize();
 
+textareaLEl.oninput = () => {
+    convertLREl.disabled = textareaLEl.value === "";
+}
+
+textareaREl.oninput = () => {
+    convertRLEl.disabled = textareaREl.value === "";
+}
+
 convertLREl.onclick = () => {
+    convertRLEl.disabled = false;
+
     textareaREl.value = textareaLEl.value.split("\n").map((el) => {
         let overallAge = 0;
 
@@ -53,6 +63,8 @@ convertLREl.onclick = () => {
 };
 
 convertRLEl.onclick = () => {
+    convertLREl.disabled = false;
+
     textareaLEl.value = textareaREl.value.split("\n").map((el) => {
         let overallAge = parseFloat(el);
         if (isNaN(overallAge)) {
