@@ -10,9 +10,9 @@ convertLREl.onclick = () => {
     textareaREl.value = textareaLEl.value.split("\n").map((el) => {
         let overallAge = 0;
 
-        const gaAge = /(?:GA|PCA)(\d+)w/i.exec(el);
+        const gaAge = /(?:GA|PCA)(\d+\.?\d*)w/i.exec(el);
         if (gaAge !== null) {
-            overallAge += (parseInt(gaAge[1]) - 38) * 7;
+            overallAge += (parseFloat(gaAge[1]) - 38) * 7;
             el = el.replace(gaAge[0], "");
         }
 
