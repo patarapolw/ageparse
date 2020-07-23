@@ -421,10 +421,10 @@ bonjour@^3.5.0:
     multicast-dns "^6.0.1"
     multicast-dns-service-types "^1.1.0"
 
-bootstrap-css-only@^4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/bootstrap-css-only/-/bootstrap-css-only-4.2.1.tgz#2e1ffebf8f8fb9e29447b3a98b5fea4dacb03b71"
-  integrity sha512-3SkuhCfiAS8nMlJXoQjIUTQqlWVNFQP71VF9IzNc+6YxMtlHz6gfhLQkuADcyWQu9+EE/l2SqJbUJfsB3fB1MA==
+bootstrap-css-only@^4.4.1:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/bootstrap-css-only/-/bootstrap-css-only-4.4.1.tgz#08012477b1baab52fa1ca304eaba2e40f6ef0d2e"
+  integrity sha512-iBgNli7RnedBFwn6sMTQoAZ8WgIwmX4kF1rckfj+pgro5q/Q0DbLtcpfH60XoFnCXzbEJU/khC/B2EQap89mCg==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
